@@ -17,7 +17,7 @@ cout<< "capacity "<<v.capacity()<<endl; // yaha pe capaicty double ho gayi jabki
 
 cout<< "Size "<<v.size()<<endl;
 
-for (int i:v){
+for (int i:v){ // yaha pe i jo hai wo v ki saari har iteration pe value store karta rahega .
     cout<<i<<" ";
 }
 cout<<endl;
