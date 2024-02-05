@@ -9,15 +9,27 @@ int main (){
 
     // min heap banayenge ham 
     // isme ye hota hai ki koi bhi element nikalenge to wo sabse minimum hoga 
-    priority_queue<int ,vector<int> , greater<int>> mini;
+    priority_queue<int ,vector<int> , greater<int>> mini; //greater int ke liye 
 
     // ab isme element kaise push karne hai wo dekhenge 
     maxi.push(1);
-    maxi.push(2);
+    maxi.push(9);
     maxi.push(3);
-    maxi.push(4);
-    for (int i=0;i<=maxi.size();i++){
+    maxi.push(0);
+    int n = maxi.size();
+    for (int i=0;i<n;i++){
         cout<<maxi.top()<<" ";
         maxi.pop();
-    }
+    }cout<<endl;
+    mini.push(1);
+    mini.push(9);
+    mini.push(8);
+    mini.push(4);
+    mini.push(3);
+    int m = mini.size();
+    for (int i =0;i<m;i++){
+        cout<<mini.top()<<" ";
+        mini.pop();
+    }cout<<endl;
+    cout<<"Khali hai kya bhai "<<mini.empty();
 }
