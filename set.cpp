@@ -27,6 +27,7 @@ int main(){ // isme modify ka koi option nahi hota hai sirf add ya delete ho sak
     
     set <int>::iterator itr= s.find(5);
     cout<<"the iterator value is "<<*itr<<endl;
+
     
     // index find karne ke liye neeche wala code hai 
 
