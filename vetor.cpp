@@ -10,7 +10,7 @@ cout<< "capacity "<<v.capacity()<<endl;
 v.push_back(1); // ye element insert karne ke liye hota hai.
 cout<< "capacity "<<v.capacity()<<endl;
 
-v.push_back(2);
+v.push_back(4);
 cout<< "capacity "<<v.capacity()<<endl;
 
 v.push_back(2);
@@ -23,7 +23,7 @@ for (int i:v){ // yaha pe i jo hai wo v ki saari har iteration pe value store ka
 }
 cout<<endl;
 
-v.pop_back();// ye hota hai last element remove karne ke liye 
+//v.pop_back();// ye hota hai last element remove karne ke liye 
 cout<<"size "<<v.size()<<endl;
 
 for (int i:v){
@@ -38,5 +38,13 @@ vector <int> last (a);
 cout<<"capacity "<<last.capacity()<<endl;
 
 cout<<"max "<<*max_element(v.begin(),v.end())<<endl; // star works as iterator here so that we get the exact pointer 
-cout<<" total numbes of 2 "<<count(v.begin(),v.end(),2);
+cout<<" total numbes of 2 "<<count(v.begin(),v.end(),2)<<endl;
+//vector<int>::iterator it=v.erase(v.begin());
+// for (int i:v){
+//     cout<<i<<" ";
+// }cout<<endl;
+int max_index=max_element(v.begin(),v.end())-v.begin();
+cout<<max_index<<endl;
+int min_index=min_element(v.begin(),v.end())-v.begin();
+cout<<min_index<<endl;
 }
