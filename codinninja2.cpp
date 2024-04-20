@@ -3,9 +3,9 @@ using namespace std;
 void value(string s){
     for(int i=0;i<s.length();i++){
         if(s[i]==' '){
-           s.replace(i,1,"@40");// here one is used to specify that only one character after the position "i" will get replaced
-            
-        }
+           s.replace(i,1,"@40");// here one is used to specify that only one character after the position "i" will get replaced  
+        }// this code works perfectly
+        
         else{
             continue;
         }
