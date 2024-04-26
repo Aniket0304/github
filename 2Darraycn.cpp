@@ -16,25 +16,25 @@ int main(){
     int endingCol=3-1;
 
     while(count<total){
-        for(int index=startingCol;index<=endingCol;index++){
+        for(int index=startingCol;count < total && index<=endingCol;index++){
             ans.push_back(arr[startingRow][index]);
             count++;
         }startingRow++;
 
 
-        for(int index=startingRow;index<=endingRow;index++){
+        for(int index=startingRow;count < total && index<=endingRow;index++){
             ans.push_back(arr[index][endingCol]);
             count++;
         }endingCol--;
 
         
-        for(int index=endingCol;index>=startingCol;index--){
+        for(int index=endingCol;count < total && index>=startingCol;index--){
             ans.push_back(arr[endingRow][index]);
             count++;
         }endingRow--;
 
 
-        for(int index=endingRow;index>=startingRow;index--){
+        for(int index=endingRow;count < total && index>=startingRow;index--){
             ans.push_back(arr[index][startingCol]);
             count++;
         }startingCol++;
