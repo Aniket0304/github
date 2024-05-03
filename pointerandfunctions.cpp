@@ -13,7 +13,7 @@ void update(int *p){
 }
 
 int main (){
-    int value = 5;
+    int value = 8;
 
     int *p=&value;
 
