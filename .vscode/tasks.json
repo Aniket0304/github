@@ -29,6 +29,7 @@
             "command": "C:\\MinGW\\bin\\g++.exe",
             "args": [
                 "-fdiagnostics-color=always",
+                "-m64",
                 "-g",
                 "${file}",
                 "-o",
