@@ -9,6 +9,4 @@ int main (){
     char *v = "howisthis";// this is very bad practice
     char *p = &temp;
     cout<< p <<endl;// jab tak isse ek null character nahi mil jaayega tab tak ye nahi rukega 
-
-    
 }
