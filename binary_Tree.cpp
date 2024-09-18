@@ -63,6 +63,7 @@ void inorder(node * root){
     cout<< root -> data << " ";
     inorder(root-> right);
 }
+
 void preorder(node * root ){
     if ( root == NULL){
         return ;
